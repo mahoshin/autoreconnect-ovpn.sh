@@ -3,8 +3,9 @@ export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local
 
 ### Thanks Xream's Work XD
 
-# if you don't have several vpn server to select, 
-# you can comment following line and use your openvpn config file name to replace "${host}.ovpn"
+# if you don't have several vpn servers to select, you can comment following line 
+# and use your openvpn config file name to replace "${host}.ovpn" in while loop.
+
 read -p "Select the host: " host
 
 function getStatus () {
