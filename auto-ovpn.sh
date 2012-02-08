@@ -19,7 +19,7 @@ while [[ 1 ]]; do
 		echo "openvpn is not connected!"
 		echo "Reconnecting!"
                 #Replace your_sudo_password to your real user sudo password.
-		echo your_sudo_password | sudo -S openvpn --config /home/lowstz/openvpn/${host}.ovpn
+		echo your_sudo_password | sudo -S openvpn --config /home/user/openvpn/${host}.ovpn
 		sleep 6
 	fi
 	sleep 6
