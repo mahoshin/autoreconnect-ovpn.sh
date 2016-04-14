@@ -13,7 +13,7 @@ while [[ 1 ]]; do
 	if [[ $? == 0 ]]; then
 		echo "openvpn не подключен!"
 		echo "Переподключение!"
-		echo your_sudo_password | sudo -S openvpn --config /home/$USER/openvpn/${host}.ovpn
+		echo your_sudo_password | sudo -S openvpn --config ~/openvpn/${host}.ovpn
 		sleep 6
 	fi
 	sleep 6
