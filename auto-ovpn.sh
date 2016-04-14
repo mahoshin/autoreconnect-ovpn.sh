@@ -11,8 +11,8 @@ function getStatus () {
 while [[ 1 ]]; do
 	getStatus tun0
 	if [[ $? == 0 ]]; then
-		echo "openvpn is not connected!"
-		echo "Reconnecting!"
+		echo "openvpn не подключен!"
+		echo "Переподключение!"
 		echo your_sudo_password | sudo -S openvpn --config /home/user/openvpn/${host}.ovpn
 		sleep 6
 	fi
